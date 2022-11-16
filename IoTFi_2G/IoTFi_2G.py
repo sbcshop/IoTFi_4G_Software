@@ -1,3 +1,9 @@
+'''
+This is the liberay file for working with our IoTFi 2G board
+Develop by sbcomponents 
+
+'''
+
 import random
 from machine import Pin, UART, SPI, I2C, PWM
 import os
