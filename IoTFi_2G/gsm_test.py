@@ -1,3 +1,11 @@
+'''
+This is the example code for working with gsm module functionality
+Develp by sbcomponents
+
+Please make change accordinly
+
+'''
+
 import IoTFi_2G
 import os
 from IoTFi_2G import sim868, Lcd1_14
@@ -28,9 +36,9 @@ def infoDevice():
                 time.sleep(1)
 
 infoDevice()
-mobile_number = "9118520507"
-time = 100
-sms_text = "Hello from gsm test"
+mobile_number = "........" #Enter your mobile number whome you want to call/sms
+time = 100                 #Enter time duration of your call accordingly
+sms_text = "Hello from gsm test" #Enter the text you want send to 
 
 
 #g = sim868().gps() #please uncomment this line for gps 
