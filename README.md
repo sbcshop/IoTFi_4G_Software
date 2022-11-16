@@ -59,7 +59,7 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
 After downloading and installing thonny ide you will able to run our example codes in IoTFi boards, for this please follow the steps below:
 
 * Step.1 - Download the Zip file of IoTFi package and extract it in your computer system, for this click on code—>download Zip
-* Step.2 - After downloading and extrating the Zip file of this package you will get two different directries for working with our 2G and 4G modules
+* Step.2 - After downloading and extrating the Zip file of this package you will get two different directries i.e, "IoTFi_2G" and "IoTFi_4G" for working with our 2G and 4G boards.
 * Step.3 - If you wont to work with our 2G module, open the IoTFi_2G directory you can see here multiple python files in this folder.
 * Step.4 - The file named with "IoTFi_2g" is the liberary file, you should have to save this file in rp2040 of our boards by naming as it is
 * Step.5 - Ater saving the liberary file you can pick any example file to test your board, and start working as your wish by some modifications(if require) accordingly. 
