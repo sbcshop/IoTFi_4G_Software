@@ -1,3 +1,9 @@
+'''
+This is the example code for working with WiFi functionality of IoTFi board
+Developed by sbcomponents
+
+'''
+
 from IoTFi_2G import wifi, Lcd1_14
 import time
 
@@ -29,9 +35,9 @@ def infoDevice():
 
 infoDevice()
 
-wifi_ssid = "Tech SB_2G"
-wifi_pass = "jc643111h@"
-wifi_port = "8080"
+wifi_ssid = ""  #Enter your ssid name
+wifi_pass = ""  #Enter your password
+wifi_port = "8080"       #server port
 
 server = wifi(wifi_ssid, wifi_pass, wifi_port)
 server.Wifi_start()
