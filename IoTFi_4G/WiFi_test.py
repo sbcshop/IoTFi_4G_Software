@@ -1,3 +1,8 @@
+'''
+This is the example code for working with WiFi functionality of IoTFi board
+Developed by sbcomponents
+'''
+
 from IoTFi_4G import wifi, Lcd1_14
 import time
 
