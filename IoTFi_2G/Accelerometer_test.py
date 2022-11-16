@@ -1,3 +1,9 @@
+'''
+This is the example code for working with accelerometer functionality of this board
+Develop by sbcomponents
+
+'''
+
 import IoTFi_2G
 from IoTFi_2G import accelerometer
 import time
