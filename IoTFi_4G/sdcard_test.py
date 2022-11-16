@@ -1,3 +1,8 @@
+'''
+This is the example code of working with SDCard functionality of IoTFi
+Developed by sbcomponents
+'''
+
 import machine
 import os
 import utime
