@@ -34,9 +34,9 @@ def infoDevice():
 
 infoDevice()
 
-wifi_ssid = "Tech SB_2G"
-wifi_pass = "jc643111h@"
-wifi_port = "8080"
+wifi_ssid = " "  #Enter your ssid name
+wifi_pass = " "  #Enter your password
+wifi_port = "8080"  #Server port
 
 server = wifi(wifi_ssid, wifi_pass, wifi_port)
 server.Wifi_start()
