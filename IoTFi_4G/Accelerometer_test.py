@@ -1,3 +1,8 @@
+'''
+This is the example code for working with accelerometer functionality of this board
+Developed by sbcomponents
+'''
+
 from IOTFI_4G import IoTFi
 from IOTFI_4G import accelerometer
 from IOTFI_4G import Lcd1_14
