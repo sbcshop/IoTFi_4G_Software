@@ -221,10 +221,6 @@ class sim868:
                 utime.sleep(2)
                 power.value(0)
                 print('Pico 2G is starting up, please wait...\r\n')
-                LCD.fill(LCD.black) 
-                LCD.text("Pico 2G is starting up",40,40,LCD.white)
-                LCD.text("Please wait...",40,60,LCD.white) 
-                LCD.lcd_show()
                 utime.sleep(4)
     def Network_checking(self):# Network connectivity check
         for i in range(1, 3):
@@ -240,32 +236,17 @@ class sim868:
         count = 0
         print('Start GPS...')
         self.Send_command('AT+CGNSPWR=1', 'OK')
-        LCD.fill(LCD.black) 
-        LCD.lcd_show()
-
-        LCD.text("GPS POWER ON",40,40,LCD.white) 
-        LCD.lcd_show()
         utime.sleep(2)
         for i in range(1, 10):
             self.uart.write(bytearray(b'AT+CGNSINF\r\n'))
             rec_buff = self.wait_resp_info()
             if ',,,,' in rec_buff.decode():
                 print('GPS is not ready')
-                LCD.fill(LCD.black) 
-                LCD.lcd_show()
-                LCD.text("GPS is not ready",40,60,LCD.white) 
-                LCD.lcd_show()
                 utime.sleep(5)
                 #print(rec_buff.decode())
                 if i >= 9:
                     print('GPS positioning failed, please check the GPS antenna!\r\n')
                     self.Send_command('AT+CGNSPWR=0', 'OK')
-                    LCD.fill(LCD.black) 
-                    LCD.lcd_show()
-
-                    LCD.text("GPS positioning failed",40,40,LCD.white)
-                    LCD.text("GPS POWER OFF",40,60,LCD.white) 
-                    LCD.lcd_show()
                     utime.sleep(4)
                 else:
                     utime.sleep(2)
@@ -277,10 +258,6 @@ class sim868:
                     print(rec_buff.decode())
                 else:
                     self.Send_command('AT+CGNSPWR=0', 'OK')
-                    LCD.fill(LCD.black) 
-                    LCD.lcd_show()
-                    LCD.text("GPS POWER OFF",40,60,LCD.white) 
-                    LCD.lcd_show()
                     utime.sleep(4)
                     break
                 
@@ -319,25 +296,13 @@ class sim868:
     def bluetooth(): 
         Check_and_start() 
         Send_command('AT+BTPOWER=1', 'OK', 3000)
-        LCD.fill(LCD.black) 
-        LCD.lcd_show()
-        LCD.text("BT power on",40,40,LCD.white) 
-        LCD.lcd_show()
         
         Send_command('AT+BTHOST?', 'OK', 3000)
         Send_command('AT+BTSTATUS?', 'OK', 3000)
         Send_command('AT+BTSCAN=1,10', 'OK', 8000)
-        LCD.fill(LCD.black) 
-        LCD.lcd_show()
-        LCD.text("Scan BT Devices",40,40,LCD.white) 
-        LCD.lcd_show()
         
         utime.sleep(5)
         Send_command('AT+BTPOWER=0', 'OK')
-        LCD.fill(LCD.black) 
-        LCD.lcd_show()
-        LCD.text("BT power off",40,40,LCD.white) 
-        LCD.lcd_show()
 
 
 ########## ESP32-C3 Module ##############
