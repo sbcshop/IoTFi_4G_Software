@@ -1,3 +1,10 @@
+'''
+This is the example code for working with gsm module functionality
+Develop by sbcomponents
+
+Please make changes accordingly
+'''
+
 import IoTFi_2G
 import os
 from IOTFI_4G import IoTFi, Lcd1_14
