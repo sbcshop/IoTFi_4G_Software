@@ -1,6 +1,6 @@
 '''
 This is the example code for working with additional GPIO's  functionality
-Develp by sbcomponents
+Developed by sbcomponents
 
 '''
 
