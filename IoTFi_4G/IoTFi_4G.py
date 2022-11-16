@@ -1,3 +1,10 @@
+'''
+This is the liberary file for working with IoTFi 4G board
+Developed by sbcomponents
+
+'''
+
+
 from machine import Pin,SPI,PWM,UART,I2C
 import time,utime
 import binascii
@@ -98,9 +105,6 @@ class IoTFi:
                 rec_temp = self.wait_resp_info()
                 if 'OK' in rec_temp.decode():
                     print('Pico 4G is ready\r\n' + rec_temp.decode())
-                    #LCD.fill(LCD.black) 
-                    #LCD.text("Pico 4G is ready",40,40,LCD.white) 
-                    #LCD.lcd_show()
                     break
                 else:
                     power = machine.Pin(15, machine.Pin.OUT)
@@ -108,10 +112,6 @@ class IoTFi:
                     utime.sleep(4)
                     power.value(0)
                     print('Pico 4G is starting up, please wait...\r\n')
-                    #LCD.fill(LCD.black) 
-                    #LCD.text("Pico 4G is starting up",40,40,LCD.white)
-                    #LCD.text("Please wait...",40,60,LCD.white) 
-                    #LCD.lcd_show()
                     utime.sleep(4)
 
 
@@ -130,9 +130,6 @@ class IoTFi:
             count = 0
             print('Start GPS...')
             self.Send_command('AT+QGPS=1', 'OK')
-            #LCD.fill(LCD.black) 
-            #LCD.text("GPS POWER ON",40,40,LCD.white) 
-            #LCD.lcd_show()
             utime.sleep(2)
             for i in range(1, 5):
                 self.uart.write(bytearray(b'AT+QGPSGNMEA="RMC"\r\n'))
@@ -141,10 +138,6 @@ class IoTFi:
             
                 if ',,,,' in rec_buff.decode():
                     print('GPS is not ready')
-                    #LCD.fill(LCD.black) 
-                    #LCD.lcd_show()
-                    #LCD.text(rec_buff.decode(),40,60,LCD.white) 
-                    #LCD.lcd_show()
                     utime.sleep(5)
                     print(rec_buff.decode())
             
@@ -152,12 +145,6 @@ class IoTFi:
                     if i >= 9:
                         print('GPS positioning failed, please check the GPS antenna!\r\n')
                         self.Send_command('AT+QGPSEND', 'OK')
-                        #LCD.fill(LCD.black) 
-                        #LCD.lcd_show()
-
-                        #LCD.text("GPS positioning failed",40,40,LCD.white)
-                        #LCD.text("GPS POWER OFF",40,60,LCD.white) 
-                        #LCD.lcd_show()
                         utime.sleep(4)
                     else:
                         utime.sleep(2)
@@ -167,17 +154,10 @@ class IoTFi:
                         count += 1
                         print('GPS info:')
                         print(rec_buff.decode())
-                        #LCD.fill(LCD.black) 
-                        #LCD.text(rec_buff.decode(),40,60,LCD.white) 
-                        #LCD.lcd_show()
                         
                        
                     else:
                         self.Send_command('AT+QGPSEND', 'OK')
-                        #LCD.fill(LCD.black) 
-                        #LCD.lcd_show()
-                        #LCD.text("GPS POWER OFF",40,60,LCD.white) 
-                        #LCD.lcd_show()
                         utime.sleep(4)
                         break
             
@@ -188,12 +168,7 @@ class IoTFi:
             self.Send_command('AT+CHFA=1', 'OK')
             self.Send_command("ATD"+mobile_number+";", 'OK')
             utime.sleep(time)
-            #LCD.fill(LCD.black) 
-            #LCD.text("CALL IS CONNECTED",20,80,LCD.white)  
-            #LCD.lcd_show()
             self.Send_command('AT+CHUP;', 'OK')#hangup call
-            #LCD.text("CALL IS DISCONNECTED",20,80,LCD.white)
-            #LCD.lcd_show()
 
 
 
@@ -217,9 +192,6 @@ class IoTFi:
                 self.uart.write(bytearray(sms_text))
                 utime.sleep(0.5)
                 self.uart.write(bytearray(Hex_str_to_str("1A")))
-                #LCD.fill(LCD.black) 
-                #LCD.text("SEND MESSAGE SUCESSFULLY",20,80,LCD.white)  
-                #LCD.lcd_show()
 
 
 class accelerometer(object):
