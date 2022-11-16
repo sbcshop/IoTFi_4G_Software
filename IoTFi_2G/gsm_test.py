@@ -1,6 +1,6 @@
 '''
 This is the example code for working with gsm module functionality
-Develp by sbcomponents
+Develop by sbcomponents
 
 Please make change accordinly
 
