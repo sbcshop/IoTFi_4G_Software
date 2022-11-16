@@ -46,3 +46,9 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
  Now let’s take a closer look at our IoT-Fi board and see what other hardware components are on it
  
  
+## Steps To Follow for Working with IoT-Fi Boards
+
+* Step.1 - Download the Zip file of IoTFi package and extract it in your computer system, for this click on code—>download Zip
+* Step.2 - After downloading and extrating the Zip file of this package you will get two different directries for working with our 2G and 4G modules
+* Step.3 - 
+
