@@ -45,7 +45,16 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
 ## Hardware Overview
  Now let’s take a closer look at our IoT-Fi board and see what other hardware components are on it
  
- 
+## Downloading IDE
+* To open upython(.py) files you should have Thonny IDE installed in your system, If you don’t have Thonny IDE follow the link below to install it
+*  https://thonny.org/
+
+## For setup the Board in thonny </b>
+* Now connect USB Cable on USB Port of Pico.
+* Open Thonny IDE and Choose interpreter as MicroPython (Raspberry Pi pico).
+
+<img src="https://github.com/sbcshop/Raspberry-Pi-Pico-RFID-Expansion/blob/main/images/thonny-interpreter.PNG" />
+
 ## Steps To Follow for Working with IoT-Fi Boards
 
 * Step.1 - Download the Zip file of IoTFi package and extract it in your computer system, for this click on code—>download Zip
