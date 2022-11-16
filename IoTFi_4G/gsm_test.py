@@ -35,9 +35,9 @@ def infoDevice():
                 time.sleep(1)
 
 infoDevice()
-mobile_number = "9118520507"
-time = 100
-sms_text = "Hello from gsm test"
+mobile_number = " " #Enter your 10 digit mobile number
+time = 100           #Time duration of your call  
+sms_text = "Hello from gsm test" #Text you want to send in sms
 
 
 #Message = IoTFi().message(Mobile_number,Write_message) #send the message
