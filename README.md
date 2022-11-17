@@ -51,7 +51,7 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
 ## Downloading IDE
 * To open upython(.py) files you should have Thonny IDE installed in your system, If you don’t have Thonny IDE follow the link below to install it
 *  https://thonny.org/
-* For brief discriptions reagrding how to satrt with PICO RP2040, click on link below
+* For brief discriptions on how to get satrt with PICO rp2040, click on link below:
 https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
 
 ## For setup the Board in thonny </b>
