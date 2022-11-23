@@ -18,8 +18,7 @@ def infoDevice():
         LCD.vline(230,10,115,LCD.white)       
         
         LCD.text("SB-COMPONENTS",70,40,LCD.white)
-        LCD.text("PICO 4G",70,60,LCD.white)
-        LCD.text("EXPANSION",70,80,LCD.white)  
+        LCD.text("IoTFi 4G",70,60,LCD.white)
         LCD.lcd_show()
         time.sleep(2)
         LCD.fill(LCD.black)
