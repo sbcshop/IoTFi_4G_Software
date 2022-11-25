@@ -48,6 +48,8 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
 ## Hardware Overview
  Now let’s take a closer look at our IoT-Fi board and see what other hardware components are on it
  
+ <img src ="https://github.com/sbcshop/IoTFi/blob/main/images/IotFi%204G.png" />
+ 
 ## Downloading IDE
 * To open upython(.py) files you should have Thonny IDE installed in your system, If you don’t have Thonny IDE follow the link below to install it
 *  https://thonny.org/
