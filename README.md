@@ -73,6 +73,7 @@ After downloading and installing thonny ide you will able to run our example cod
 
 * Step.4 - The file named with "IoTFi_2g" is the liberary file, you should have to save this file in rp2040 of our boards by naming as it is
 
-* Step.5 - Ater saving the liberary file you can pick any example file to test your board, and start working as your wish by some modifications(if require) accordingly.
+* Step.5 - Ater saving the liberary file you can pick any example file and put a suitable sim card in simslot to test your board, and start working as you want by some modifications(if require) in the code.
 
-### Note: Intstall the usb driver provide in "IoTFi-4G" directory before using it as a cellular via usb 
+### Note: 
+Intstall the usb driver provide in "IoTFi-4G" directory in your system(PC) before using it as a cellular via usb. After that long-press Powerkey button to activate 4G module and network led will start blinking and your system will connect to cellular.
