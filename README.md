@@ -75,3 +75,4 @@ After downloading and installing thonny ide you will able to run our example cod
 
 * Step.5 - Ater saving the liberary file you can pick any example file to test your board, and start working as your wish by some modifications(if require) accordingly.
 
+### Note: Intstall the usb driver provide in "IoTFi-4G" directory before using it as a cellular via usb 
