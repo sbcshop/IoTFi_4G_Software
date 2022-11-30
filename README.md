@@ -46,7 +46,9 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
  
  
 ## Hardware Overview
- Now let’s take a closer look at our IoT-Fi board and see what other hardware components are on it
+ Now let’s take a closer look at our IoT-Fi boards and see what other hardware components are present on it
+ 
+ <img src ="https://github.com/sbcshop/IoTFi/blob/main/images/IotFi%202G.png" />
  
  <img src ="https://github.com/sbcshop/IoTFi/blob/main/images/IotFi%204G'.png" />
  
