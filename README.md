@@ -12,15 +12,6 @@ IoT-Fi is a compact low power IoT enabled device having the capability of GSM mo
 * A 3.5mm jack for audio input output
 * 1.14 LCD display
 
-# Features of SIM Modules
-
-## Features of SIM868:
-
-* Small in size quad band (GSM/GPRS + GNSS)
-* LCC + LGA form factor with abundant interfaces including UART, USB2.0, GPIO, etc.
-* Low power consumption
-* Embedded TCP/UDP Protocols
-
 ## Features of SIM7600G-H:
 
 * Small in size quad band (GSM/GPRS + GNSS)
