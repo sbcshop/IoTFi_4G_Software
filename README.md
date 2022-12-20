@@ -85,6 +85,9 @@ Intstall the usb driver provide in "IoTFi-4G" directory in your system(PC) befor
 
  ![IoTFi-2G](https://cdn.shopify.com/s/files/1/1217/2104/products/03_3.png?v=1669123121&width=400)
 
+* [PiTalk](https://shop.sb-components.co.uk/products/pitalk-modular-smartphone-for-raspberry-pi?variant=12516562436179) - Our other GSM Based product
+
+ ![PiTalk](https://cdn.shopify.com/s/files/1/1217/2104/products/PiTalk_-_Modular_SmartPhone_for_Raspberry_Pi_5.png?v=1528805795&width=400)
 
 ## Product License
 
