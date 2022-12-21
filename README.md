@@ -53,21 +53,20 @@ https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico
 
 <img src="https://github.com/sbcshop/Raspberry-Pi-Pico-RFID-Expansion/blob/main/images/thonny-interpreter.PNG" />
 
-## Steps To Follow for Working with IoT-Fi Boards
-After downloading and installing thonny ide you will able to run our example codes in IoTFi boards, for this please follow the steps below:
+## Working With IoTFi-4G
 
-* Step.1 - Download the Zip file of IoTFi package and extract it in your computer system, for this click on code—>download Zip
+To start working with our this board we have provided few basics examples according to features included in this board. You can smply run the pyhon example code in your board by downloading and extracting this repository in your system. Below is the brief description of Example codes:
 
-* Step.2 - After downloading and extrating the Zip file of this package you will get two different directries i.e, "IoTFi_2G" and "IoTFi_4G" for working with our 2G and 4G boards.
+* Before running any example codes library file must have to save in RP2040 of your boarboard. Locate the library file under the folder ***Library*** of this repository. Open it in Thonny IDE and save it by clicking on ***file*** (Upper-left corner in your IDE) and then click on ***save a copy***, choose ***raspberry pi pico*** option enter the file name and save it as it is(do not rename).
 
-* Step.3 - If you wont to work with our 2G module, open the IoTFi_2G directory you can see here multiple python files in this folder.
+* ***Accelerometer_Example*** this is the simple application of tilt indication in the four direction (i.e, Left, Right, Forward and , Backward). When you will upload this code in your baoard will see a ***box*** appearing according to the direction in which your board tilted. In case of no tilt it will show a message in display.
 
-* Step.4 - The file named with "IoTFi_2g" is the liberary file, you should have to save this file in rp2040 of our boards by naming as it is
+* ***GSM_Buttons_Example*** this is the example of GSM module functionality. When you will upload this code in your board you can make a call, message, and get your location by simply pressing GP buttons provided in board.
 
-* Step.5 - Ater saving the liberary file you can pick any example file and put a suitable sim card in simslot to test your board, and start working as you want by some modifications(if require) in the code.
+* ***SDcard_AccelerometerData.py*** this is data aquisition(gathring) from a sensor or device. In this example code you cand store the accelerometer data in SD card. Do not forget to put a sd card in it before running this example code.
 
 ### Note: 
-Intstall the usb driver provide in "IoTFi-4G" directory in your system(PC) before using it as a cellular via usb. After that long-press Powerkey button to activate 4G module and network led will start blinking and your system will connect to cellular.
+Intstall the usb driver in your system(PC) provided in this repository, before using this board as a cellular via usb. After that long-press Powerkey button to activate 4G module and network led will start blinking and your system will connect to cellular.
 
 ## Documentation
 
