@@ -71,7 +71,7 @@ Intstall the usb driver provide in "IoTFi-4G" directory in your system(PC) befor
 
 ## Documentation
 
-* [IoTFi-4G Software](https://github.com/sbcshop/IoTFi_4G_Hardware)
+* [IoTFi-4G Hardware](https://github.com/sbcshop/IoTFi-4G-Hardware)
 * [Raspberry Pi Pico Getting Started with Micropython](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
 * [Raspberry Pi Pico Official website](https://www.raspberrypi.com/documentation/microcontrollers/)
 * [RP2040 Datasheet](https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html)
