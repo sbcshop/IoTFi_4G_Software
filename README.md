@@ -65,6 +65,8 @@ To start working with our this board we have provided few basics examples accord
 
 * ***SDcard_AccelerometerData.py*** this is data aquisition(gathring) from a sensor or device. In this example code you cand store the accelerometer data in SD card. Do not forget to put a sd card in it before running this example code.
 
+* ***Wifi_Server.py*** this example code is for wiwi functionality. After connecting to any wifi network you will be able to use the wifi features of this board. 
+
 ### Note: 
 Intstall the usb driver in your system(PC) provided in this repository, before using this board as a cellular via usb. After that long-press Powerkey button to activate 4G module and network led will start blinking and your system will connect to cellular.
 
