@@ -28,7 +28,7 @@
 '''
 
 from machine import Pin, SPI
-from IoTFi_2G import accelerometer, Lcd1_14
+from IoTFi_4G import accelerometer, Lcd1_14
 import time 
 
 axi = accelerometer()
@@ -42,7 +42,7 @@ def info():
     LCD.vline(10,10,115,LCD.white)
     LCD.vline(230,10,115,LCD.white)
     
-    LCD.text("IoTFi 2G", 90,40,LCD.blue)# print on tft screen
+    LCD.text("IoTFi 4G", 90,40,LCD.blue)# print on tft screen
     LCD.lcd_show()
     LCD.hline(10,10,220,LCD.red)
     LCD.lcd_show()
