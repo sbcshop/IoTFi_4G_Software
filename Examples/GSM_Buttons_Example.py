@@ -77,19 +77,19 @@ while True:
         print("Sending msg....")
         LCD.text("Sending...",70,40,LCD.white)
         LCD.lcd_show()
-        Message = sim868().message(mobile_number,sms_text)
+        Message = IoTFi().message(mobile_number,sms_text)
         break
     
     if b2.value() == 0:
         print("Calling....")
         LCD.text("Calling...",70,40,LCD.white)
         LCD.lcd_show()
-        Call = sim868().call(mobile_number,time)
+        Call = IoTFi().call(mobile_number,time)
         break
     if b2.value() == 0 and b1.value() == 0:
         print("Getting Location")
         LCD.text("Locating...",70,40,LCD.white)
         LCD.lcd_show()
-        Gps = sim868().gps()
+        Gps = IoTFi().gps()
         break
 
