@@ -151,38 +151,13 @@ class IoTFi:
             self.Check_and_start()
             count = 0
             print('Start GPS...')
-            self.Send_command('AT+QGPS=1', 'OK')
+            self.Send_command('AT+CGPS=1', 'OK')
             utime.sleep(2)
             for i in range(1, 5):
-                self.uart.write(bytearray(b'AT+QGPSGNMEA="RMC"\r\n'))
-    #          
+                self.uart.write(bytearray(b'AT+CGPSINFO\r\n'))         
                 rec_buff = self.wait_resp_info()
-            
-                if ',,,,' in rec_buff.decode():
-                    print('GPS is not ready')
-                    utime.sleep(5)
-                    print(rec_buff.decode())
-            
-            
-                    if i >= 9:
-                        print('GPS positioning failed, please check the GPS antenna!\r\n')
-                        self.Send_command('AT+QGPSEND', 'OK')
-                        utime.sleep(4)
-                    else:
-                        utime.sleep(2)
-                        continue
-                else:
-                    if count <= 3:
-                        count += 1
-                        print('GPS info:')
-                        print(rec_buff.decode())
-                        
-                       
-                    else:
-                        self.Send_command('AT+QGPSEND', 'OK')
-                        utime.sleep(4)
-                        break
-            
+
+
     def call(self,mobile_number,time):
             self.Check_and_start() # Initialize SIM Module 
             self.Network_checking() # Network connectivity check
@@ -753,4 +728,3 @@ class wifi():
         self.sendCMD("AT+CIPMUX=1","OK")
         self.sendCMD("AT+CIPSERVER=1,"+self.wifi_port,"OK")
         self.sendCMD("AT+CIFSR","OK")
-
